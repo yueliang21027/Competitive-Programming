@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D33254592988F69D00ACDE5D /* shell_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D33254582988F69D00ACDE5D /* shell_game.cpp */; };
 		D36B78482986702B0050E2F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D36B78472986702B0050E2F2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D33254542988F69D00ACDE5D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		D36B78422986702B0050E2F2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,11 +33,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D33254562988F69D00ACDE5D /* Shell Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Shell Game"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33254582988F69D00ACDE5D /* shell_game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shell_game.cpp; sourceTree = "<group>"; };
 		D36B78442986702B0050E2F2 /* Competitive Programming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Competitive Programming"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36B78472986702B0050E2F2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D33254532988F69D00ACDE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D36B78412986702B0050E2F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,6 +57,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D332544E2988F4BB00ACDE5D /* USACO */ = {
+			isa = PBXGroup;
+			children = (
+				D332544F2988F65E00ACDE5D /* Bronze */,
+			);
+			path = USACO;
+			sourceTree = "<group>";
+		};
+		D332544F2988F65E00ACDE5D /* Bronze */ = {
+			isa = PBXGroup;
+			children = (
+				D33254502988F66C00ACDE5D /* January 2019 */,
+			);
+			path = Bronze;
+			sourceTree = "<group>";
+		};
+		D33254502988F66C00ACDE5D /* January 2019 */ = {
+			isa = PBXGroup;
+			children = (
+				D33254572988F69D00ACDE5D /* Shell Game */,
+			);
+			path = "January 2019";
+			sourceTree = "<group>";
+		};
+		D33254572988F69D00ACDE5D /* Shell Game */ = {
+			isa = PBXGroup;
+			children = (
+				D33254582988F69D00ACDE5D /* shell_game.cpp */,
+			);
+			path = "Shell Game";
+			sourceTree = "<group>";
+		};
 		D36B783B2986702B0050E2F2 = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				D36B78442986702B0050E2F2 /* Competitive Programming */,
+				D33254562988F69D00ACDE5D /* Shell Game */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D36B78472986702B0050E2F2 /* main.cpp */,
+				D332544E2988F4BB00ACDE5D /* USACO */,
 			);
 			path = "Competitive Programming";
 			sourceTree = "<group>";
@@ -65,6 +118,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D33254552988F69D00ACDE5D /* Shell Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D332545A2988F69D00ACDE5D /* Build configuration list for PBXNativeTarget "Shell Game" */;
+			buildPhases = (
+				D33254522988F69D00ACDE5D /* Sources */,
+				D33254532988F69D00ACDE5D /* Frameworks */,
+				D33254542988F69D00ACDE5D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shell Game";
+			productName = "Shell Game";
+			productReference = D33254562988F69D00ACDE5D /* Shell Game */;
+			productType = "com.apple.product-type.tool";
+		};
 		D36B78432986702B0050E2F2 /* Competitive Programming */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D36B784B2986702B0050E2F2 /* Build configuration list for PBXNativeTarget "Competitive Programming" */;
@@ -91,6 +161,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					D33254552988F69D00ACDE5D = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					D36B78432986702B0050E2F2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -110,11 +183,20 @@
 			projectRoot = "";
 			targets = (
 				D36B78432986702B0050E2F2 /* Competitive Programming */,
+				D33254552988F69D00ACDE5D /* Shell Game */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D33254522988F69D00ACDE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33254592988F69D00ACDE5D /* shell_game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D36B78402986702B0050E2F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,6 +208,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D332545B2988F69D00ACDE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D332545C2988F69D00ACDE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D36B78492986702B0050E2F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -254,6 +352,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D332545A2988F69D00ACDE5D /* Build configuration list for PBXNativeTarget "Shell Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D332545B2988F69D00ACDE5D /* Debug */,
+				D332545C2988F69D00ACDE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D36B783F2986702B0050E2F2 /* Build configuration list for PBXProject "Competitive Programming" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
