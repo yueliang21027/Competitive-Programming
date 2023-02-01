@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		D33254592988F69D00ACDE5D /* shell_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D33254582988F69D00ACDE5D /* shell_game.cpp */; };
+		D3670787298A462900B6C9BB /* mixing_milk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3670786298A462900B6C9BB /* mixing_milk.cpp */; };
 		D36B78482986702B0050E2F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D36B78472986702B0050E2F2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D33254542988F69D00ACDE5D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D3670782298A462900B6C9BB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -35,12 +45,21 @@
 /* Begin PBXFileReference section */
 		D33254562988F69D00ACDE5D /* Shell Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Shell Game"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33254582988F69D00ACDE5D /* shell_game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shell_game.cpp; sourceTree = "<group>"; };
+		D3670784298A462900B6C9BB /* Mixing Milk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mixing Milk"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3670786298A462900B6C9BB /* mixing_milk.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mixing_milk.cpp; sourceTree = "<group>"; };
 		D36B78442986702B0050E2F2 /* Competitive Programming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Competitive Programming"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36B78472986702B0050E2F2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D33254532988F69D00ACDE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3670781298A462900B6C9BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,6 +87,7 @@
 		D332544F2988F65E00ACDE5D /* Bronze */ = {
 			isa = PBXGroup;
 			children = (
+				D367078B298A463100B6C9BB /* December 2018 */,
 				D33254502988F66C00ACDE5D /* January 2019 */,
 			);
 			path = Bronze;
@@ -89,6 +109,22 @@
 			path = "Shell Game";
 			sourceTree = "<group>";
 		};
+		D3670785298A462900B6C9BB /* Mixing Milk */ = {
+			isa = PBXGroup;
+			children = (
+				D3670786298A462900B6C9BB /* mixing_milk.cpp */,
+			);
+			path = "Mixing Milk";
+			sourceTree = "<group>";
+		};
+		D367078B298A463100B6C9BB /* December 2018 */ = {
+			isa = PBXGroup;
+			children = (
+				D3670785298A462900B6C9BB /* Mixing Milk */,
+			);
+			path = "December 2018";
+			sourceTree = "<group>";
+		};
 		D36B783B2986702B0050E2F2 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +138,7 @@
 			children = (
 				D36B78442986702B0050E2F2 /* Competitive Programming */,
 				D33254562988F69D00ACDE5D /* Shell Game */,
+				D3670784298A462900B6C9BB /* Mixing Milk */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +172,23 @@
 			productReference = D33254562988F69D00ACDE5D /* Shell Game */;
 			productType = "com.apple.product-type.tool";
 		};
+		D3670783298A462900B6C9BB /* Mixing Milk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D367078A298A462900B6C9BB /* Build configuration list for PBXNativeTarget "Mixing Milk" */;
+			buildPhases = (
+				D3670780298A462900B6C9BB /* Sources */,
+				D3670781298A462900B6C9BB /* Frameworks */,
+				D3670782298A462900B6C9BB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mixing Milk";
+			productName = "Mixing Milk";
+			productReference = D3670784298A462900B6C9BB /* Mixing Milk */;
+			productType = "com.apple.product-type.tool";
+		};
 		D36B78432986702B0050E2F2 /* Competitive Programming */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D36B784B2986702B0050E2F2 /* Build configuration list for PBXNativeTarget "Competitive Programming" */;
@@ -164,6 +218,9 @@
 					D33254552988F69D00ACDE5D = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					D3670783298A462900B6C9BB = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					D36B78432986702B0050E2F2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -184,6 +241,7 @@
 			targets = (
 				D36B78432986702B0050E2F2 /* Competitive Programming */,
 				D33254552988F69D00ACDE5D /* Shell Game */,
+				D3670783298A462900B6C9BB /* Mixing Milk */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +252,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D33254592988F69D00ACDE5D /* shell_game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3670780298A462900B6C9BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3670787298A462900B6C9BB /* mixing_milk.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +283,22 @@
 			name = Debug;
 		};
 		D332545C2988F69D00ACDE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D3670788298A462900B6C9BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3670789298A462900B6C9BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -357,6 +439,15 @@
 			buildConfigurations = (
 				D332545B2988F69D00ACDE5D /* Debug */,
 				D332545C2988F69D00ACDE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D367078A298A462900B6C9BB /* Build configuration list for PBXNativeTarget "Mixing Milk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3670788298A462900B6C9BB /* Debug */,
+				D3670789298A462900B6C9BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
