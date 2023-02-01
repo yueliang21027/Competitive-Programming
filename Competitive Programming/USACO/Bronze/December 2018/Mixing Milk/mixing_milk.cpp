@@ -8,6 +8,10 @@ int main(int argc, const char * argv[]) {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     
+    // File IO
+//    freopen("mixmilk.in", "r", stdin);
+//    freopen("mixmilk.out", "w", stdout);
+    
     // Vector of Pairs Containing <milk, capacity>
     vector<pair<int, int>> buckets(3);
     
@@ -22,10 +26,16 @@ int main(int argc, const char * argv[]) {
     for (int i = 0; i < 100; i++) {
         
         // Operate on Indexes Start, End
-        int start = i % 3, end = (i % 3) + 1;
-        if (end == 3) {
+        int start, end;
+        if (i % 3 == 0) {
+            start = 0;
+            end = 1;
+        } else if (i % 3 == 1) {
             start = 1;
-            --end;
+            end = 2;
+        } else if (i % 3 == 2) {
+            start = 2;
+            end = 0;
         }
         
         // If Bucket A Becomes Empty Before Bucket B Becomes Full
@@ -40,11 +50,10 @@ int main(int argc, const char * argv[]) {
             buckets[end].first = buckets[end].second;
         }
         
-        cout << i << ": " << start << " " << end << "--> " << buckets[0].first << " " << buckets[1].first << " " << buckets[2].first << endl;
     }
     
     // Output
-//    cout << buckets[0].first << " " << buckets[1].first << " " << buckets[2].first << endl;
+    cout << buckets[0].first << endl << buckets[1].first << endl << buckets[2].first << endl;
     
     
     return 0;
