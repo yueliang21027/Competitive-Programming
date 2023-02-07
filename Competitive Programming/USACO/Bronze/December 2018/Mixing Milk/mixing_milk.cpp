@@ -9,8 +9,8 @@ int main(int argc, const char * argv[]) {
     cin.tie(0);
     
     // File IO
-//    freopen("mixmilk.in", "r", stdin);
-//    freopen("mixmilk.out", "w", stdout);
+    freopen("mixmilk.in", "r", stdin);
+    freopen("mixmilk.out", "w", stdout);
     
     // Vector of Pairs Containing <milk, capacity>
     vector<pair<int, int>> buckets(3);

@@ -10,8 +10,8 @@ int main(int argc, const char * argv[]) {
     cin.tie(0);
     
     // File IO
-//    freopen("shell.in", "r", stdin);
-//    freopen("shell.out", "w", stdout);
+    freopen("shell.in", "r", stdin);
+    freopen("shell.out", "w", stdout);
     
     vector<int> shells = {1, 2, 3}; // Stores Shells
     map<int, int> visits; // Stores Visits

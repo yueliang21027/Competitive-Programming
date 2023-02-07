@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D33254592988F69D00ACDE5D /* shell_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D33254582988F69D00ACDE5D /* shell_game.cpp */; };
+		D33D9192299210D6001DBCFD /* cow_signal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D33D9191299210D6001DBCFD /* cow_signal.cpp */; };
 		D3670787298A462900B6C9BB /* mixing_milk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3670786298A462900B6C9BB /* mixing_milk.cpp */; };
 		D36B78482986702B0050E2F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D36B78472986702B0050E2F2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D33254542988F69D00ACDE5D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D33D918D299210D6001DBCFD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -45,6 +55,8 @@
 /* Begin PBXFileReference section */
 		D33254562988F69D00ACDE5D /* Shell Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Shell Game"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33254582988F69D00ACDE5D /* shell_game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shell_game.cpp; sourceTree = "<group>"; };
+		D33D918F299210D6001DBCFD /* The Cow-Signal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "The Cow-Signal"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33D9191299210D6001DBCFD /* cow_signal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cow_signal.cpp; sourceTree = "<group>"; };
 		D3670784298A462900B6C9BB /* Mixing Milk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mixing Milk"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3670786298A462900B6C9BB /* mixing_milk.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mixing_milk.cpp; sourceTree = "<group>"; };
 		D36B78442986702B0050E2F2 /* Competitive Programming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Competitive Programming"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +65,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		D33254532988F69D00ACDE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33D918C299210D6001DBCFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,6 +106,7 @@
 		D332544F2988F65E00ACDE5D /* Bronze */ = {
 			isa = PBXGroup;
 			children = (
+				D33D918A299210AB001DBCFD /* December 2016 */,
 				D367078B298A463100B6C9BB /* December 2018 */,
 				D33254502988F66C00ACDE5D /* January 2019 */,
 			);
@@ -107,6 +127,22 @@
 				D33254582988F69D00ACDE5D /* shell_game.cpp */,
 			);
 			path = "Shell Game";
+			sourceTree = "<group>";
+		};
+		D33D918A299210AB001DBCFD /* December 2016 */ = {
+			isa = PBXGroup;
+			children = (
+				D33D9190299210D6001DBCFD /* The Cow-Signal */,
+			);
+			path = "December 2016";
+			sourceTree = "<group>";
+		};
+		D33D9190299210D6001DBCFD /* The Cow-Signal */ = {
+			isa = PBXGroup;
+			children = (
+				D33D9191299210D6001DBCFD /* cow_signal.cpp */,
+			);
+			path = "The Cow-Signal";
 			sourceTree = "<group>";
 		};
 		D3670785298A462900B6C9BB /* Mixing Milk */ = {
@@ -139,6 +175,7 @@
 				D36B78442986702B0050E2F2 /* Competitive Programming */,
 				D33254562988F69D00ACDE5D /* Shell Game */,
 				D3670784298A462900B6C9BB /* Mixing Milk */,
+				D33D918F299210D6001DBCFD /* The Cow-Signal */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +207,23 @@
 			name = "Shell Game";
 			productName = "Shell Game";
 			productReference = D33254562988F69D00ACDE5D /* Shell Game */;
+			productType = "com.apple.product-type.tool";
+		};
+		D33D918E299210D6001DBCFD /* The Cow-Signal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33D9193299210D6001DBCFD /* Build configuration list for PBXNativeTarget "The Cow-Signal" */;
+			buildPhases = (
+				D33D918B299210D6001DBCFD /* Sources */,
+				D33D918C299210D6001DBCFD /* Frameworks */,
+				D33D918D299210D6001DBCFD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Cow-Signal";
+			productName = "The Cow-Signal";
+			productReference = D33D918F299210D6001DBCFD /* The Cow-Signal */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3670783298A462900B6C9BB /* Mixing Milk */ = {
@@ -218,6 +272,9 @@
 					D33254552988F69D00ACDE5D = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					D33D918E299210D6001DBCFD = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					D3670783298A462900B6C9BB = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -242,6 +299,7 @@
 				D36B78432986702B0050E2F2 /* Competitive Programming */,
 				D33254552988F69D00ACDE5D /* Shell Game */,
 				D3670783298A462900B6C9BB /* Mixing Milk */,
+				D33D918E299210D6001DBCFD /* The Cow-Signal */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +310,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D33254592988F69D00ACDE5D /* shell_game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33D918B299210D6001DBCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33D9192299210D6001DBCFD /* cow_signal.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +349,22 @@
 			name = Debug;
 		};
 		D332545C2988F69D00ACDE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D33D9194299210D6001DBCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D33D9195299210D6001DBCFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +521,15 @@
 			buildConfigurations = (
 				D332545B2988F69D00ACDE5D /* Debug */,
 				D332545C2988F69D00ACDE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D33D9193299210D6001DBCFD /* Build configuration list for PBXNativeTarget "The Cow-Signal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33D9194299210D6001DBCFD /* Debug */,
+				D33D9195299210D6001DBCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
