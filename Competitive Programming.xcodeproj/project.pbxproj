@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D33254592988F69D00ACDE5D /* shell_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D33254582988F69D00ACDE5D /* shell_game.cpp */; };
 		D33D9192299210D6001DBCFD /* cow_signal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D33D9191299210D6001DBCFD /* cow_signal.cpp */; };
+		D33D919E29921A5A001DBCFD /* speeding_ticket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D33D919D29921A5A001DBCFD /* speeding_ticket.cpp */; };
 		D3670787298A462900B6C9BB /* mixing_milk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3670786298A462900B6C9BB /* mixing_milk.cpp */; };
 		D36B78482986702B0050E2F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D36B78472986702B0050E2F2 /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		D33D918D299210D6001DBCFD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D33D919929921A59001DBCFD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -57,6 +67,8 @@
 		D33254582988F69D00ACDE5D /* shell_game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shell_game.cpp; sourceTree = "<group>"; };
 		D33D918F299210D6001DBCFD /* The Cow-Signal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "The Cow-Signal"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33D9191299210D6001DBCFD /* cow_signal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cow_signal.cpp; sourceTree = "<group>"; };
+		D33D919B29921A59001DBCFD /* speeding_ticket */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = speeding_ticket; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33D919D29921A5A001DBCFD /* speeding_ticket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = speeding_ticket.cpp; sourceTree = "<group>"; };
 		D3670784298A462900B6C9BB /* Mixing Milk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mixing Milk"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3670786298A462900B6C9BB /* mixing_milk.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mixing_milk.cpp; sourceTree = "<group>"; };
 		D36B78442986702B0050E2F2 /* Competitive Programming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Competitive Programming"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +84,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D33D918C299210D6001DBCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33D919829921A59001DBCFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,6 +125,7 @@
 		D332544F2988F65E00ACDE5D /* Bronze */ = {
 			isa = PBXGroup;
 			children = (
+				D33D919629921A48001DBCFD /* December 2015 */,
 				D33D918A299210AB001DBCFD /* December 2016 */,
 				D367078B298A463100B6C9BB /* December 2018 */,
 				D33254502988F66C00ACDE5D /* January 2019 */,
@@ -145,6 +165,29 @@
 			path = "The Cow-Signal";
 			sourceTree = "<group>";
 		};
+		D33D919629921A48001DBCFD /* December 2015 */ = {
+			isa = PBXGroup;
+			children = (
+				D33D919C29921A5A001DBCFD /* Speeding Ticket */,
+			);
+			path = "December 2015";
+			sourceTree = "<group>";
+		};
+		D33D919C29921A5A001DBCFD /* Speeding Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				D33D919D29921A5A001DBCFD /* speeding_ticket.cpp */,
+			);
+			path = "Speeding Ticket";
+			sourceTree = "<group>";
+		};
+		D346E7242A100909004E3821 /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LeetCode;
+			sourceTree = "<group>";
+		};
 		D3670785298A462900B6C9BB /* Mixing Milk */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +219,7 @@
 				D33254562988F69D00ACDE5D /* Shell Game */,
 				D3670784298A462900B6C9BB /* Mixing Milk */,
 				D33D918F299210D6001DBCFD /* The Cow-Signal */,
+				D33D919B29921A59001DBCFD /* speeding_ticket */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +227,7 @@
 		D36B78462986702B0050E2F2 /* Competitive Programming */ = {
 			isa = PBXGroup;
 			children = (
+				D346E7242A100909004E3821 /* LeetCode */,
 				D36B78472986702B0050E2F2 /* main.cpp */,
 				D332544E2988F4BB00ACDE5D /* USACO */,
 			);
@@ -224,6 +269,23 @@
 			name = "The Cow-Signal";
 			productName = "The Cow-Signal";
 			productReference = D33D918F299210D6001DBCFD /* The Cow-Signal */;
+			productType = "com.apple.product-type.tool";
+		};
+		D33D919A29921A59001DBCFD /* speeding_ticket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33D919F29921A5A001DBCFD /* Build configuration list for PBXNativeTarget "speeding_ticket" */;
+			buildPhases = (
+				D33D919729921A59001DBCFD /* Sources */,
+				D33D919829921A59001DBCFD /* Frameworks */,
+				D33D919929921A59001DBCFD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = speeding_ticket;
+			productName = speeding_ticket;
+			productReference = D33D919B29921A59001DBCFD /* speeding_ticket */;
 			productType = "com.apple.product-type.tool";
 		};
 		D3670783298A462900B6C9BB /* Mixing Milk */ = {
@@ -275,6 +337,9 @@
 					D33D918E299210D6001DBCFD = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					D33D919A29921A59001DBCFD = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					D3670783298A462900B6C9BB = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -300,6 +365,7 @@
 				D33254552988F69D00ACDE5D /* Shell Game */,
 				D3670783298A462900B6C9BB /* Mixing Milk */,
 				D33D918E299210D6001DBCFD /* The Cow-Signal */,
+				D33D919A29921A59001DBCFD /* speeding_ticket */,
 			);
 		};
 /* End PBXProject section */
@@ -318,6 +384,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D33D9192299210D6001DBCFD /* cow_signal.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33D919729921A59001DBCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33D919E29921A5A001DBCFD /* speeding_ticket.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +439,22 @@
 			name = Debug;
 		};
 		D33D9195299210D6001DBCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D33D91A029921A5A001DBCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D33D91A129921A5A001DBCFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +620,15 @@
 			buildConfigurations = (
 				D33D9194299210D6001DBCFD /* Debug */,
 				D33D9195299210D6001DBCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D33D919F29921A5A001DBCFD /* Build configuration list for PBXNativeTarget "speeding_ticket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33D91A029921A5A001DBCFD /* Debug */,
+				D33D91A129921A5A001DBCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
