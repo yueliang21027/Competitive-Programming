@@ -181,7 +181,7 @@
 			path = "Speeding Ticket";
 			sourceTree = "<group>";
 		};
-		D346E7242A100909004E3821 /* LeetCode */ = {
+		D346E7252A100AB6004E3821 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -227,9 +227,9 @@
 		D36B78462986702B0050E2F2 /* Competitive Programming */ = {
 			isa = PBXGroup;
 			children = (
-				D346E7242A100909004E3821 /* LeetCode */,
 				D36B78472986702B0050E2F2 /* main.cpp */,
 				D332544E2988F4BB00ACDE5D /* USACO */,
+				D346E7252A100AB6004E3821 /* LeetCode */,
 			);
 			path = "Competitive Programming";
 			sourceTree = "<group>";
