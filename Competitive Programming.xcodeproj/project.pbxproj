@@ -11,6 +11,7 @@
 		D33D9192299210D6001DBCFD /* cow_signal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D33D9191299210D6001DBCFD /* cow_signal.cpp */; };
 		D33D919E29921A5A001DBCFD /* speeding_ticket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D33D919D29921A5A001DBCFD /* speeding_ticket.cpp */; };
 		D346E7272A100D90004E3821 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D346E7262A100D90004E3821 /* main.cpp */; };
+		D346E7312A1012E5004E3821 /* two_sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D346E7302A1012E5004E3821 /* two_sum.cpp */; };
 		D3670787298A462900B6C9BB /* mixing_milk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3670786298A462900B6C9BB /* mixing_milk.cpp */; };
 		D36B78482986702B0050E2F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D36B78472986702B0050E2F2 /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		D33D919929921A59001DBCFD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D346E72C2A1012E5004E3821 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -71,6 +81,8 @@
 		D33D919B29921A59001DBCFD /* speeding_ticket */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = speeding_ticket; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33D919D29921A5A001DBCFD /* speeding_ticket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = speeding_ticket.cpp; sourceTree = "<group>"; };
 		D346E7262A100D90004E3821 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D346E72E2A1012E5004E3821 /* Two Sum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Two Sum"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D346E7302A1012E5004E3821 /* two_sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = two_sum.cpp; sourceTree = "<group>"; };
 		D3670784298A462900B6C9BB /* Mixing Milk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mixing Milk"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3670786298A462900B6C9BB /* mixing_milk.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mixing_milk.cpp; sourceTree = "<group>"; };
 		D36B78442986702B0050E2F2 /* Competitive Programming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Competitive Programming"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +105,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D33D919829921A59001DBCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D346E72B2A1012E5004E3821 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,8 +206,17 @@
 			isa = PBXGroup;
 			children = (
 				D346E7262A100D90004E3821 /* main.cpp */,
+				D346E72F2A1012E5004E3821 /* Two Sum */,
 			);
 			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		D346E72F2A1012E5004E3821 /* Two Sum */ = {
+			isa = PBXGroup;
+			children = (
+				D346E7302A1012E5004E3821 /* two_sum.cpp */,
+			);
+			path = "Two Sum";
 			sourceTree = "<group>";
 		};
 		D3670785298A462900B6C9BB /* Mixing Milk */ = {
@@ -223,6 +251,7 @@
 				D3670784298A462900B6C9BB /* Mixing Milk */,
 				D33D918F299210D6001DBCFD /* The Cow-Signal */,
 				D33D919B29921A59001DBCFD /* speeding_ticket */,
+				D346E72E2A1012E5004E3821 /* Two Sum */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -291,6 +320,23 @@
 			productReference = D33D919B29921A59001DBCFD /* speeding_ticket */;
 			productType = "com.apple.product-type.tool";
 		};
+		D346E72D2A1012E5004E3821 /* Two Sum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D346E7322A1012E5004E3821 /* Build configuration list for PBXNativeTarget "Two Sum" */;
+			buildPhases = (
+				D346E72A2A1012E5004E3821 /* Sources */,
+				D346E72B2A1012E5004E3821 /* Frameworks */,
+				D346E72C2A1012E5004E3821 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Two Sum";
+			productName = "Two Sum";
+			productReference = D346E72E2A1012E5004E3821 /* Two Sum */;
+			productType = "com.apple.product-type.tool";
+		};
 		D3670783298A462900B6C9BB /* Mixing Milk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D367078A298A462900B6C9BB /* Build configuration list for PBXNativeTarget "Mixing Milk" */;
@@ -343,6 +389,9 @@
 					D33D919A29921A59001DBCFD = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					D346E72D2A1012E5004E3821 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					D3670783298A462900B6C9BB = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -369,6 +418,7 @@
 				D3670783298A462900B6C9BB /* Mixing Milk */,
 				D33D918E299210D6001DBCFD /* The Cow-Signal */,
 				D33D919A29921A59001DBCFD /* speeding_ticket */,
+				D346E72D2A1012E5004E3821 /* Two Sum */,
 			);
 		};
 /* End PBXProject section */
@@ -395,6 +445,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D33D919E29921A5A001DBCFD /* speeding_ticket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D346E72A2A1012E5004E3821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D346E7312A1012E5004E3821 /* two_sum.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +517,22 @@
 			name = Debug;
 		};
 		D33D91A129921A5A001DBCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D346E7332A1012E5004E3821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D346E7342A1012E5004E3821 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -633,6 +707,15 @@
 			buildConfigurations = (
 				D33D91A029921A5A001DBCFD /* Debug */,
 				D33D91A129921A5A001DBCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D346E7322A1012E5004E3821 /* Build configuration list for PBXNativeTarget "Two Sum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D346E7332A1012E5004E3821 /* Debug */,
+				D346E7342A1012E5004E3821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
